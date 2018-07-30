@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+header {
+  padding: 60px;
+  text-align: center;
+  background-color: lightgreen;
+  color: #333;
+}
+
+nav {
+  display: flex;
+  background-color: #333;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px;
+  text-align: center;
+}
+nav a:hover {
+  color: black;
+  background-color: #fff;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+aside {
+  flex: 1;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.about-us {
+  padding: 0 0 25px 0;
+}
+
+.our-team {
+  padding: 25px 0 0 0;
+  border-top: 1px solid #ccc;
+}
+
+.our-team h2 {
+  margin-bottom: 20px;
+}
+
+.our-team ul{
+  padding: 0;
+  list-style: none;
+}
+
+section {
+  flex: 4;
+  padding: 20px;
+}
+
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  height: 200px;
+  padding: 20px;
+  margin: 10px 0px;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #ddd;
+}
+
+@media screen and (max-width: 700px){
+  main, nav {
+    flex-direction: column;
+  }
+}
